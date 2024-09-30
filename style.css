@@ -1,3 +1,6 @@
+html {
+	font-family: Verdana, Helvetica, sans-serif;
+}
 .flex-container {
 	display: flex;
 	justify-content: center;
@@ -10,9 +13,9 @@
 }
 
 #head-div {
-	border-radius: 25px;
-	border: 2px solid #73AD21;
-	text-align: center
+	border-bottom:solid #73AD21 6px;
+	text-align: center;
+	font-weight: bold;
 }
 
 .flex-container > a:link {
@@ -26,5 +29,13 @@
 	display: inline-block;
 	box-sizing: border-box;
 	width: 300px;
+	text-decoration: none;
+	font-size: 20px
 
 }
+
+.flex-container > a:hover {
+	color: white;
+	background-color: #73AD21;
+}
+
