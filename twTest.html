@@ -4,13 +4,17 @@
 		<link href="output.css" rel="stylesheet">
 	</head>
 	<body class = "h-screen w-screen">
-		<div class="bg-blue-400 grid grid-cols-3 h-full justify-items-center">
-			<div class = "bg-green-300 w-full text-center">1</div>
-			<div class = "bg-orange-300 w-full text-center">2</div>
-			<div class = "bg-violet-300 w-full text-center">3</div>
-			<div class = "bg-yellow-300 w-full text-center">4</div>
-			<div class = "bg-slate-300 w-full text-center">5</div>
-			<div class = "bg-red-300 w-full text-center">6</div>
+		<div class="bg-blue-400 grid grid-cols-[25%_50%_25%] h-full grid-rows-4 gap-4">
+			<div class = "bg-green-300 w-full h-full text-center">1</div>
+			<div class = "bg-orange-300 w-full h-full text-center">2</div>
+			<div class = "bg-violet-300 w-full h-full text-center">3</div>
+			<div class = "bg-yellow-300 w-full h-full row-span-2 text-center border-4 rounded-md">
+				<input type="radio" id="dust2" name="maps" value="dust2"/><label for="dust2"> Dust2</label> </br>
+				<input type="radio" id="mirage" name="maps" value="mirage"/><label for="mirage"> Mirage</label></br>
+				<input type="radio" id="nuke" name="maps" value="nuke"/><label for="nuke"> Nuke</label></br>
+			</div>
+			<div class = "bg-slate-300 w-full h-full text-center">5</div>
+			<div class = "bg-red-300 w-full h-full text-center">6</div>
 		</div>
 	</body>
 </html>
