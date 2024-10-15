@@ -7,19 +7,41 @@
 	<title>Strat Roulette</title>
 </head>
 
-<body class="h-screen w-screen">
-	<div class="bg-blue-300 grid grid-cols-[25%_50%_25%] h-full grid-rows-4 gap-4">
+<body class="w-screen font-mono" style="height: 93vh; width: 97vw">
+	<div class="bg-blue-300 grid grid-cols-[25%_50%_25%] h-full grid-rows-[10%_50%_30%_10%] gap-4">
 		<div class="bg-orange-50 w-full h-full text-center">1</div>
 		<div class="h-full w-full grid place-items-center bg-green-100">
-			<h1 class="">Strat Roulette!</h1>
+			<h1 class="text-5xl font-bold">Strat Roulette!</h1>
 		</div>
 		<div class="bg-orange-50 w-full h-full text-center">3</div>
 
-		<div class="bg-orange-50 w-full h-full text-center">4</div>
-		<div class="bg-orange-50 w-full h-full text-center">5</div>
+		<div class="bg-orange-50 row-span-2">
+			<div class="m-5 space-y-10 justify-start text-2xl">
+				<input type="radio" id="dust2" name="maps" value="dust2" /><label for="dust2">
+					Dust2</label></br>
+				<input type="radio" id="mirage" name="maps" value="mirage" /><label for="mirage">
+					Mirage</label></br>
+				<input type="radio" id="nuke" name="maps" value="nuke" /><label for="nuke">
+					Nuke</label></br>
+				<input type="radio" id="inferno" name="maps" value="inferno" /><label for="inferno">
+					Inferno</label></br>
+				<input type="radio" id="vertigo" name="maps" value="vertigo" /><label for="vertigo">
+					Vertigo</label></br>
+				<input type="radio" id="ancient" name="maps" value="ancient" /><label for="ancient">
+					Ancient</label></br>
+				<input type="radio" id="anubis" name="maps" value="anubis" /><label for="anubis">
+					Anubis</label></br>
+
+			</div>
+		</div>
+		<div class="bg-orange-50 w-full h-full text-center border-4 rounded-lg border-black">
+			<p class="border-b-4 border-black text-3xl p-6">Strat Title</p>
+			<p class="text-2xl leading-8 p-5">Example paragraph, this is where strats will go after being
+				randomly chosen.
+			</p>
+		</div>
 		<div class="bg-orange-50 w-full h-full text-center">6</div>
 
-		<div class="bg-orange-50 w-full h-full text-center">7</div>
 		<div class="bg-orange-50 w-full h-full text-center">8</div>
 		<div class="bg-orange-50 w-full h-full text-center">9</div>
 
