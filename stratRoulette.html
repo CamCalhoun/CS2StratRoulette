@@ -7,31 +7,40 @@
 	<title>Strat Roulette</title>
 </head>
 
-<body class="w-screen font-mono" style="height: 93vh; width: 97vw">
-	<div class="bg-blue-300 grid grid-cols-[25%_50%_25%] h-full grid-rows-[10%_50%_30%_10%] gap-4">
+<body class="w-screen h-screen font-mono" >
+	<div class="bg-blue-300 grid grid-cols-[25%_50%_25%] h-full grid-rows-[10%_50%_20%_20%]">
+		<!--ROW 1 -->
 		<div class="bg-orange-50 w-full h-full text-center">1</div>
 		<div class="h-full w-full grid place-items-center bg-green-100">
 			<h1 class="text-5xl font-bold">Strat Roulette!</h1>
 		</div>
 		<div class="bg-orange-50 w-full h-full text-center">3</div>
 
-		<div class="bg-orange-50 row-span-2">
-			<div class="m-5 space-y-10 justify-start text-2xl">
-				<input type="radio" id="dust2" name="maps" value="dust2" /><label for="dust2">
-					Dust2</label></br>
-				<input type="radio" id="mirage" name="maps" value="mirage" /><label for="mirage">
-					Mirage</label></br>
-				<input type="radio" id="nuke" name="maps" value="nuke" /><label for="nuke">
-					Nuke</label></br>
-				<input type="radio" id="inferno" name="maps" value="inferno" /><label for="inferno">
-					Inferno</label></br>
-				<input type="radio" id="vertigo" name="maps" value="vertigo" /><label for="vertigo">
-					Vertigo</label></br>
-				<input type="radio" id="ancient" name="maps" value="ancient" /><label for="ancient">
-					Ancient</label></br>
-				<input type="radio" id="anubis" name="maps" value="anubis" /><label for="anubis">
-					Anubis</label></br>
-
+		<!--ROW 2-->
+		<div class="bg-orange-500 row-span-2 border-4 rounded-lg border-black m-4">
+				<div class="flex flex-col m-5 text-2xl lg:text-3xl  xl:text-4xl justify-evenly w-2/5 h-full">
+			<!--<div class="m-5 space-y-10 justify-start text-2xl lg:text-3xl lg:space-y-12 xl:text-4xl xl:space-y-16"> -->
+				<div class="flex justify-between"> <label for="dust2">Dust2</label>
+					<input type="radio" id="dust2" name="maps" value="dust2" class="p-2 scale-150" /></div>
+				
+				<div class="flex justify-between"> <label for="mirage">Mirage</label>
+					<input type="radio" id="mirage" name="maps" value="mirage" class="p-2 scale-150" /></div>
+				
+				<div class="flex justify-between"> <label for="nuke">Nuke</label>
+					<input type="radio" id="nuke" name="maps" value="nuke" class="p-2 scale-150" /></div>
+				
+				<div class="flex justify-between"> <label for="inferno">Inferno</label>
+					<input type="radio" id="inferno" name="maps" value="inferno" class="p-2 scale-150" /></div>
+				
+				<div class="flex justify-between"> <label for="vertigo">Vertigo</label>
+					<input type="radio" id="vertigo" name="maps" value="vertigo" class="p-2 scale-150" /></div>
+				
+				<div class="flex justify-between"> <label for="ancient">Ancient</label>
+					<input type="radio" id="ancient" name="maps" value="ancient" class="p-2 scale-150" /></div>
+				
+				<div class="flex justify-between"> <label for="anubis">Anubis</label>
+					<input type="radio" id="anubis" name="maps" value="anubis" class="p-2 scale-150" /></div>
+				
 			</div>
 		</div>
 		<div class="bg-orange-50 w-full h-full text-center border-4 rounded-lg border-black">
@@ -42,9 +51,11 @@
 		</div>
 		<div class="bg-orange-50 w-full h-full text-center">6</div>
 
+		<!--ROW3-->
 		<div class="bg-orange-50 w-full h-full text-center">8</div>
 		<div class="bg-orange-50 w-full h-full text-center">9</div>
 
+		<!--ROW4-->
 		<div class="bg-orange-50 w-full h-full text-center">10</div>
 		<div class="h-full w-full grid place-items-center">
 			<a href="index.html"
