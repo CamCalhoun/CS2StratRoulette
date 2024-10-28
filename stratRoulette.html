@@ -4,6 +4,7 @@
 <head>
 	<link href="output.css" rel="stylesheet">
 	<title>Strat Roulette</title>
+	<script src="stratRoulette.js"></script>
 </head>
 
 <!--<body class="w-[99vw] h-[98vh] font-mono bg-blue-300">-->
@@ -51,10 +52,11 @@
 		</div>
 
 		<!--Strat display window-->
-		<div
+		<div id="displayWindow"
 			class="row-start-2 col-start-2 bg-orange-50 lg:w-full md:w-5/6 lg:h-full md:h-5/6 text-center border-4 rounded-lg border-black lg:m-4 md:mx-auto md:my-auto">
-			<p class="border-b-4 border-black text-3xl p-6">Strat Title</p>
-			<p class="text-2xl leading-8 p-5">Example paragraph, this is where strats will go after being
+			<p id="displayStratTitle" class="border-b-4 border-black text-3xl p-6">Strat Title</p>
+			<p id="displayStratInfo" class="text-2xl leading-8 p-5">Example paragraph, this is where strats will go
+				after being
 				randomly chosen.
 			</p>
 		</div>
@@ -80,7 +82,7 @@
 		</div>
 
 		<!--Reroll button-->
-		<div class="row-start-3 col-start-2 h-full w-full grid place-items-center m-auto lg:m-4">
+		<div onclick="reroll()" class="row-start-3 col-start-2 h-full w-full grid place-items-center m-auto lg:m-4">
 			<p
 				class="text-black bg-orange-50 border-4 rounded-lg border-black lg:p-8 md:p-5 lg:w-96 md:w-64 text-center md:text-xl lg:text-3xl">
 				Reroll
