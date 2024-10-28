@@ -5,8 +5,8 @@ const sides = ["any", "CT", "T"]
 const strats = {
 	"any": {
 		"Eco": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
 			"T": ["PlaceholderStrats"],
 		},
 		"Half": {
@@ -23,8 +23,8 @@ const strats = {
 	},
 	"Dust2": {
 		"Eco": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
 			"T": ["PlaceholderStrats"],
 		},
 		"Half": {
