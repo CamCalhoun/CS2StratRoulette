@@ -1,4 +1,4 @@
-import { maps, buys, sides, strats } from './csStrats.js'
+import { strats } from './csStrats.js'
 function reroll() {
 	const mapSelection = document.querySelector('input[name="maps"]:checked')
 	const buySelection = document.querySelector('input[name="buys"]:checked')
@@ -9,7 +9,6 @@ function reroll() {
 		document.getElementById("displayStratInfo").innerText = "Please make your selections."
 	}
 	else {
-		document.getElementById("displayStratInfo").innerText = `Map: ${mapSelection.value} \nBuy: ${buySelection.value} \nSide: ${sideSelection.value}`
 		//Declare values of selections as readable values
 		const m = mapSelection.value
 		const b = buySelection.value
@@ -18,7 +17,9 @@ function reroll() {
 		//Select lists of given selections, as well as any lists to fall back on
 		//Then concatenate the lists to create a list of valid strats
 		const specificStrats = strats[m][b][s]
-		const anyStrats = strats["any"][b]["any"]
+		specificStrats.concat(strats[m][b]["any"])
+		const anyStrats = strats["any"][b][s]
+		anyStrats.concat(strats["any"][b]["any"])
 		const validStrats = specificStrats.concat(anyStrats)
 
 		//Pick a random strat of the validStrats
