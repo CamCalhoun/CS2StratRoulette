@@ -1,4 +1,4 @@
-import { maps, buys, sides, strats } from '/csStrats.js'
+import { maps, buys, sides, strats } from './csStrats.js'
 function reroll() {
 	const mapSelection = document.querySelector('input[name="maps"]:checked')
 	const buySelection = document.querySelector('input[name="buys"]:checked')
