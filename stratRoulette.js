@@ -16,10 +16,16 @@ function reroll() {
 
 		//Select lists of given selections, as well as any lists to fall back on
 		//Then concatenate the lists to create a list of valid strats
-		const specificStrats = strats[m][b][s]
-		specificStrats.concat(strats[m][b]["any"])
-		const anyStrats = strats["any"][b][s]
-		anyStrats.concat(strats["any"][b]["any"])
+		var specificStrats = strats[m][b][s]			//Strats with SPECIFIED map, buy, side
+		specificStrats = specificStrats.concat(strats[m][b]["any"])		//Strats with SPECIFIED map, buy, ANY side
+		specificStrats = specificStrats.concat(strats[m]["any"][s])		//Strats with SPECIFIED map, side, ANY buy
+		specificStrats = specificStrats.concat(strats[m]["any"]["any"])	//Strats with SPECIFIED map, ANY buy, side
+		console.log(specificStrats)
+		var anyStrats = strats["any"][b][s]			//Strats with ANY map, SPECIFIED buy, side
+		anyStrats = anyStrats.concat(strats["any"][b]["any"])		//Strats with ANY map, side, SPECIFIED buy
+		anyStrats = anyStrats.concat(strats["any"]["any"][s])		//Strats with ANY map, buy, SPECIFIED side
+		anyStrats = anyStrats.concat(strats["any"]["any"]["any"])	//Strats with ANY map, buy, side
+		console.log(anyStrats)
 		const validStrats = specificStrats.concat(anyStrats)
 
 		//Pick a random strat of the validStrats

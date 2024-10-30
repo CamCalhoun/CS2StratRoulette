@@ -1,9 +1,19 @@
 const maps = ["any", "Dust2", "Mirage", "Nuke", "Inferno", "Vertigo", "Ancient", "Anubis"]
-const buys = ["Eco", "Half", "Full"]
+const buys = ["any", "Eco", "Half", "Full"]
 const sides = ["any", "CT", "T"]
 
 const strats = {
+	//Try and make strats as specific as possible. This will lead to better generation.
 	"any": {
+		"any": {
+			"any": ["Follow The Leader~Top frag is now the leader. Do exactly as they do.",
+				"Butter fingers~Upon getting a kill, you must drop your gun. You can pick it back up.",
+				"Sorry, I don't know this map~All of your callouts must be wrong. Don't use actual callouts.",
+				"Backseat Gamer~Once you die, backseat whoever the game makes you spectate until they die. Repeat until the round is over."],
+			"CT": [],
+			"T": ["Hot Potato~You must switch bomb carriers every ten seconds. If the bomb touches the floor, you cannot plant this round.",
+				"The ol' Switcheroo~After taking a site, tap the bomb to fake a plant, then run back through the way you came to head to the other site."],
+		},
 		"Eco": {
 			"any": ["A Real Eco~You can only buy one item this round. Make it count."],
 			"CT": ["Title~StratDesc"],
@@ -13,17 +23,22 @@ const strats = {
 		},
 		"Half": {
 			"any": ["A more literal half-buy~Pool your funds together. Fully equip two of your players, leave one with a half buy, and two get the scraps."],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Full": {
 			"any": ["One man's trash~Buy your least favorite weapon equipped, give it to a friend."],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"CT": ["Title-StratDesc"],
+			"T": ["Title-StratDesc"],
 		},
 
 	},
 	"Dust2": {
+		"any": {
+			"any": [],
+			"CT": [],
+			"T": ["A leisurely stroll~Long -> A-site -> Cat -> Tunnels -> Plant B"],
+		},
 		"Eco": {
 			"any": ["Title~StratDesc"],
 			"CT": ["Firing Bunker~All 5 players go car on A. 3 sit on top of the car, staring at the roof, and the other two shoot between their legs with their pistols.",
@@ -32,121 +47,151 @@ const strats = {
 			"T": ["Overwhelming Presence~Buy 5 decoys, and throw them all over long doors. Four of you make your way back to B, while one remains in long with his overwhelming presence."],
 		},
 		"Half": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Full": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["The Fnatic Special~Buy as many awps as you can afford. Everyone peak mid doors."],
 		},
 
 	},
 	"Mirage": {
+		"any": {
+			"any": [],
+			"CT": [],
+			"T": ["A leisurely stroll~Appts -> Underpass -> Connector -> Jungle -> Market -> Plant B"],
+		},
 		"Eco": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Half": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Full": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 
 	},
 	"Nuke": {
+		"any": {
+			"any": [],
+			"CT": [],
+			"T": [],
+		},
 		"Eco": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Half": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Full": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 
 	},
 	"Inferno": {
+		"any": {
+			"any": [],
+			"CT": [],
+			"T": [],
+		},
 		"Eco": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Half": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Full": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 	},
 	"Vertigo": {
+		"any": {
+			"any": [],
+			"CT": [],
+			"T": [],
+		},
 		"Eco": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Half": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Full": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 	},
 	"Ancient": {
+		"any": {
+			"any": [],
+			"CT": [],
+			"T": [],
+		},
 		"Eco": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Half": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Full": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 	},
 	"Anubis": {
+		"any": {
+			"any": [],
+			"CT": [],
+			"T": [],
+		},
 		"Eco": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Half": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 		"Full": {
-			"any": ["PlaceholderStrats"],
-			"CT": ["PlaceholderStrats"],
-			"T": ["PlaceholderStrats"],
+			"any": ["Title~StratDesc"],
+			"CT": ["Title~StratDesc"],
+			"T": ["Title~StratDesc"],
 		},
 	},
 
 }
-export { maps, buys, sides, strats };
+export { strats };
