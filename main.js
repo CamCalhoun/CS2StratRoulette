@@ -1,6 +1,5 @@
-const { app, BrowserWindow, ipcMain } = require('electron')
-const path = require('path')
-const fs = require('fs')
+const { app, BrowserWindow, ipcMain } = require('electron/main')
+const path = require('node:path')
 
 const createWindow = () => {
 	const win = new BrowserWindow({
@@ -9,8 +8,7 @@ const createWindow = () => {
 		minWidth: 1000,
 		minHeight: 750,
 		webPreferences: {
-			preload: path.join(__dirname, 'preload.js'),
-			nodeIntegration: false,
+			preload: path.join(__dirname, 'preload.js')
 		}
 	})
 
@@ -18,19 +16,10 @@ const createWindow = () => {
 }
 
 app.whenReady().then(() => {
+	ipcMain.handle('ping', () => 'pong')
 	createWindow()
 })
 
 app.on('window-all-closed', () => {
 	if (process.platform !== 'darwin') app.quit()
-})
-
-ipcMain.handle('load-strats', () => {
-	try {
-		const data = fs.readFileSync(path.join(__dirname, 'strats.json'), 'utf8')
-		return JSON.parse(data)
-	} catch (error) {
-		console.error('Error reading strats.json', error)
-		return {}
-	}
 })

@@ -1,4 +1,8 @@
-{
+const maps = ["any", "Dust2", "Mirage", "Nuke", "Inferno", "Vertigo", "Ancient", "Anubis"]
+const buys = ["any", "Eco", "Half", "Full"]
+const sides = ["any", "CT", "T"]
+
+const strats = {
 	//Try and make strats as specific as possible. This will lead to better generation.
 	"any": {
 		"any": {
@@ -192,4 +196,4 @@
 	},
 
 }
-
+export { strats };
