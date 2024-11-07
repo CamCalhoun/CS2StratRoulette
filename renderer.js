@@ -1,7 +1,5 @@
-import { strats } from './csStrats.js'
-
 async function loadStrats() {
-	window.strats = await window.Electron.loadStrats()
+	window.strats = await window.strategies.loadStrats()
 }
 
 function reroll() {
