@@ -109,7 +109,7 @@ function updateData() {
 	console.log(newStrat)
 	// Convert back to JSON and save
 	console.log(strats[m][b][s])
-	//strats[m][b][s].push(newStrat)
+	strats[m][b][s].push(newStrat)
 	let updatedData = JSON.stringify(strats, null, 2)
 
 	if (updatedData !== rawData) {
